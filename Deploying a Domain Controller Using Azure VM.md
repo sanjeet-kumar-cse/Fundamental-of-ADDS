@@ -70,29 +70,8 @@
 3. **Create Additional Domain Controllers (Optional)**
    - If needed, repeat the steps above to create additional domain controllers for redundancy and load balancing.
 
-### 4. Secure the Domain Controller
-
-1. **Configure Network Security Group (NSG) Rules**
-   - In the Azure portal, navigate to your VM's network interface.
-   - Go to the "Networking" tab and configure NSG rules to allow only necessary traffic (e.g., RDP, DNS).
-   - Restrict inbound traffic to only required ports and IP ranges.
-
-2. **Set Up Regular Backups**
-   - Configure Azure Backup for the VM to ensure regular backups of your domain controller.
-   - In the Azure portal, go to "Recovery Services vaults" and create a new vault if one doesn't exist.
-   - Set up a backup policy and associate it with your VM.
-
-### 5. Ongoing Maintenance and Monitoring
-
-1. **Monitor the Domain Controller**
-   - Regularly check the health and performance of your domain controller using Server Manager and Azure Monitor.
-   - Set up alerts in Azure Monitor for critical events and performance metrics.
-
-2. **Apply Updates and Patches**
-   - Regularly apply Windows updates and security patches to your domain controller.
-   - Schedule maintenance windows to minimize disruption.
 
 ## Conclusion
 
-By following these detailed steps, you have successfully deployed a Domain Controller on an Azure VM. Regular maintenance and monitoring will ensure the security and performance of your Domain Controller.
+By following these detailed steps, you have successfully deployed a Domain Controller on an Azure VM. 
 
