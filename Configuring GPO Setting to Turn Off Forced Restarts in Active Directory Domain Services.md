@@ -41,14 +41,6 @@ To further control when restarts can occur, you can configure Active Hours.
 2. Right-click the OU and select `Link an Existing GPO`.
 3. Choose the GPO you created (e.g., "Disable Forced Restarts Policy") from the list and click `OK`.
 
-### 7. Verify GPO Application
-1. Open Command Prompt on a client machine.
-2. Run `gpupdate /force` to manually apply the policy.
-3. Verify the settings by running `gpresult /r` to review the applied policies.
-
-### 8. Monitor and Troubleshoot
-1. Use Event Viewer to check for any Group Policy errors.
-2. Navigate to `Event Viewer` > `Applications and Services Logs` > `Microsoft` > `Windows` > `GroupPolicy`.
 
 ## Conclusion
 By following these steps, you can configure and apply a GPO to turn off forced restarts after Windows updates in Active Directory Domain Services. Regular monitoring and updates ensure that the policies remain effective and up-to-date.
