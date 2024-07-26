@@ -43,15 +43,5 @@
 2. Right-click the OU and select `Link an Existing GPO`.
 3. Choose the GPO you created (e.g., "Enable Audit Logs Policy") from the list and click `OK`.
 
-### 6. Verify GPO Application
-1. Open Command Prompt on a client machine.
-2. Run `gpupdate /force` to manually apply the policy.
-3. Verify the audit settings by running `gpresult /r` to review the applied policies.
-
-### 7. Monitor and Review Audit Logs
-1. Open Event Viewer on a client machine.
-2. Navigate to `Event Viewer` > `Windows Logs` > `Security`.
-3. Review the security logs to ensure that audit events are being logged as configured.
-
 ## Conclusion
 By following these steps, you can configure and apply a GPO to enable audit logs in Active Directory Domain Services. Regular monitoring and updates ensure that the audit policies are effective and up-to-date.
